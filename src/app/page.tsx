@@ -1,7 +1,6 @@
 'use client';
 
 import ChatBox from '@/components/ChatBox';
-import Navbar from '@/components/NavBar';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
@@ -17,8 +16,6 @@ const fadeUp = {
 export default function Home() {
   return (
     <main className='pt-24 md:pt-0 min-h-screen bg-gradient-to-br from-gray-900 to-black text-white px-6 py-10 overflow-hidden'>
-      <Navbar />
-
       {/* Main Content */}
       <div className='max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center min-h-[100vh]'>
         {/* Left Side - Intro */}
@@ -35,7 +32,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
           >
-            Hey, I'm Jonathan Fangon 👋
+            Hey, I'm Jonathan Fangon
           </motion.h1>
 
           <motion.p
